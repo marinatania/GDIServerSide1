@@ -31,9 +31,15 @@ function getChannelUsers(response) {
 	console.log("request for join Channel " + channelname);	
 }
 
+function marina(response) {
+  response.writeHead(200, {"Content-Type": "text/html"});
+      response.write("hi marina!");
+      response.end();
+}
 
 exports.start = start;
 exports.login = login;
 exports.getChannels = getChannels;
 exports.joinChannel = joinChannel;
 exports.getChannelUsers  = getChannelUsers;
+exports.marina = marina;
